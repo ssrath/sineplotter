@@ -1,10 +1,8 @@
 import java.util.ResourceBundle;
 
-public class ProjectBundle
+public class MessageBundle
 {
-	/* PITA to set up. Add folder to build path then just use the file name not with full qualified name
-	 * or extension...unlike StackOverflow suggestions*/
-	private static final String FILENAME = "app";
+	private static final String FILENAME = "messages";
 
 	private static ResourceBundle rb = ResourceBundle.getBundle(FILENAME);
 
@@ -16,7 +14,7 @@ public class ProjectBundle
 		{
 			str = rb.getString(key);
 			System.out.println("Value found: " + str + " for key: " + key);
-		}
+		}	
 		else
 		{
 			System.out.println("Properties file was not loaded correctly!!");
